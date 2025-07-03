@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
+/* Reveal.js */
+@import "reveal.js/dist/reveal.css";
+
 [hidden] {
-    display: inherit !important;
-  }
+  display: inherit !important;
+}
 
 html {
   height: 100% !important;
   min-height: 100% !important;
   margin: 0;
   border: 1px solid green;
+  box-sizing: content-box !important;
 }
 
 body {
@@ -16,6 +20,7 @@ body {
   min-height: 100% !important;
   margin: 0;
   border: 1px solid red;
+  box-sizing: content-box !important;
 }
 
 #root {
@@ -23,12 +28,13 @@ body {
   min-height: 100% !important;
   margin: 0;
   border: 1px solid black;
+  box-sizing: content-box !important;
 }
 
-.reveal {
-  width: 100% !important;
-  height: 100% !important;
+/* src/styles/reveal-isolation.css */
+.reveal-container {
+  /* Reset Tailwind's influence */
+  all: initial;
+
+  /* Restore necessary browser defaults */
 }
-
-
-  
